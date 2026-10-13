@@ -15,6 +15,7 @@ import { ModerationService, RESULT_BUS } from './moderation.service';
           urls: RABBITMQ_URLS,
           queue: RESULTS_QUEUE,
           queueOptions: { durable: true },
+          persistent: true,
         },
       },
     ]),
